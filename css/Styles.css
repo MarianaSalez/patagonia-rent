@@ -1,0 +1,26 @@
+header { 
+    align-items:center;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: calc(10px + 1.0vw);
+    font-weight: 450; }
+
+.logo{
+    width: calc(11vw);
+    min-width: 100;}
+
+/*codigo para colores*/
+.colorBase {
+    background: linear-gradient(to top, #33632d, #a5e499);
+    background-size: cover; }
+
+
+/*Estilos iconos footer*/   
+.iconos {
+    width: calc(5vw);
+    min-width: 10
+    ;}
+
