@@ -1,0 +1,217 @@
+@import url("https://p.typekit.net/p.css?s=1&k=dvd7pqz&ht=tk&f=5914.39687.43084&a=12778661&app=typekit&e=css");
+//LOGO
+$logoFont: "story-tales";
+$logoWeight: 400;
+
+//TITULOS
+$titlesFont: "atrament-web";
+$titlesWeight: 600;
+
+//TEXTOS
+$textosFont: "trade-gothic-next";
+$textosWeight: 400;
+
+//ESTILOS GENERALES
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: calc(10px + 1vw);
+  font-weight: 450;
+}
+
+.logo {
+  width: calc(11vw);
+  min-width: 100;
+}
+
+/*codigo para colores*/
+.colorBase {
+  background: linear-gradient(to top, #33632d, #a5e499);
+  background-size: cover;
+}
+
+/*Estilos iconos footer*/
+.iconos {
+  width: calc(5vw);
+  min-width: 10;
+}
+
+//MAIN SECCION (CABANAS)
+//MOBILE DESIGN
+
+.main {
+  width: 90%;
+  margin: 80px auto;
+  .tarjeta {
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    &-info {
+      order: 2;
+    }
+    &__title {
+      font-size: 0.36em;
+      margin: 0.3em 0em 0.15em 0em;
+      font-weight: $titlesWeight;
+      font-family: $titlesFont;
+    }
+    &__text {
+      font-family: $textosFont;
+      font-weight: $textosWeight;
+      font-size: 0.2em;
+      text-align: justify;
+    }
+    &-galeria {
+      width: 100%;
+      order:1;
+      height: 2.36em;
+      .tarjeta__img {
+        height: 2.36em;
+        width: 100%;
+        border-radius: 0.5;
+      }
+      .fa-angle-left {
+        $alturaIcon: 3.93em;
+        font-size: 0.6em;
+        position: absolute;
+        width: 1em;
+        height: $alturaIcon;
+        text-align: center;
+        line-height: $alturaIcon;
+        background-color: rgb(0, 0, 0, 0.5);
+        color: white;
+        margin: 0rem 0rem 0rem 0rem;
+        cursor: pointer;
+      }
+      .fa-angle-right {
+        @extend .fa-angle-left;
+        margin-left: -1em;
+      }
+    }
+
+    .selectImage {
+      display: none;
+    }
+  }
+
+  .tarjeta-left{
+    @extend .tarjeta;
+  }
+  .quienesSomos {
+    .tarjeta__title {
+      font-size: 0.6em;
+    }
+    .tarjeta__text {
+      font-size: 0.21em;
+      line-height: auto;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .main {
+    .tarjeta {
+      .tarjeta-galeria {
+        height:3.8em;
+        .tarjeta__img {
+          height: 3.8em;
+        }
+        .fa-angle-left {
+          height: 6.33em;
+          line-height: 6.33em;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    width: 100%;
+    .tarjeta {
+      margin-bottom: .80em;
+      flex-direction: row;
+      &-info {
+        width: 50%;
+        padding: 0px .30em 0px .60em;
+        .tarjeta__title{
+          margin-top: 0px;
+        }
+      }
+      &__text{
+        font-size:.19em;
+      }
+      &-galeria {
+        width: 50%;
+      }
+    }
+
+    .tarjeta-left {
+      margin-bottom: 1em;
+      .tarjeta-info {
+        order: 1;
+      }
+      .tarjeta-galeria {
+        order: 2;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px){
+  .main{
+    .tarjeta{
+      &__title{
+        font-size:.5em;
+      }
+      &-info {
+        padding:0px .8em 0px .5em;
+      }
+      &__text{
+        text-align:start;
+      }
+    }
+
+    .tarjeta-left{
+      .tarjeta-info {
+        padding:0px .5em 0px .8em;
+      }
+    }
+  }
+}
+
+@media (min-width:1600px){
+  .main{
+    .tarjeta{
+      &__title{
+        font-size:.5em;
+      }
+      &-info {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        padding:0px 3em 0px 1em;
+      }
+      &-galeria{
+        font-size:125px;
+      }
+    }
+
+    .tarjeta-left{
+      .tarjeta-info {
+        padding:0px 1em 0px 3em;
+      }
+    }
+  }
+}
+
