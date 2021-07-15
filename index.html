@@ -9,16 +9,20 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/Styles.css" />
     <link rel="icon" type="image/png" href="images/Patagonia.jpg">
-    <script src="https://kit.fontawesome.com/a0f72ea1e7.js" crossorigin="anonymous"></script>
     <title>PatagoniaRent</title>
 </head>
 
 <body>
 
+<!-- wapp flotante-->    
+    <a  href="https://api.whatsapp.com/send?phone=2944628358&text=Bienvenido%20a%20Patagonia%20Rent%21%20Escribanos%21%20Su%20consulta%20no%20molesta." class="float" target="_blank">
+    <img src="images/redes sociales/whatsappgif.gif" alt="whatsapp" class=" float my-float"></img>
+    </a>
+
     <header>
         <img class="img-thumbnail w-100" src="images/WhatsApp Image 2021-06-28 at 13.26.39.jpeg"
             alt="AEREA PATAGONIA"></a>
-        <nav class="navbar fixed-top nav-tabs navbar-expand-md bg-light navbar-light colorBase">
+        <nav class="navbar fixed-top nav-tabs navbar-expand-md navbar-light colorBase">
             <a class="navbar-brand" href="#index">
                 <img id="index" class="logo" src="images/Patagonia.jpg" alt="Logo PatagoniaRent">
             </a>
@@ -87,7 +91,7 @@
         </div>
 
         <!-- Desarrollo de cabañas-->
-        <div class="tarjeta tarjeta-left">
+        <div id="cabaña1" class="tarjeta tarjeta-left">
             <div class="tarjeta-info">
                 <h3 class="tarjeta__title">
                     Cabana 1
@@ -110,7 +114,7 @@
             </div>
         </div>
 
-        <div class="tarjeta tarjeta">
+        <div id="cabaña2" class="tarjeta tarjeta">
             <div class="tarjeta-info">
                 <h3 class="tarjeta__title">
                     Cabana 2
@@ -133,7 +137,7 @@
             </div>
         </div>
 
-        <div class="tarjeta tarjeta-left">
+        <div id="cabaña3" class="tarjeta tarjeta-left">
             <div class="tarjeta-info">
                 <h3 class="tarjeta__title">
                     Cabana 3
@@ -160,27 +164,35 @@
     
     <footer class="container-fluid colorBase">
         <div class="row text-center">
-
-            <div class="container text-center">
+            <div class="container col-sm-5 text-center">
                 <h3>ENCONTRANOS EN LAS REDES</h3>
-                <div class="d-flex justify-content-around">
-                    <a href="https://www.instagram.com/patagoniarent/">
-                        <img class="img-fluid iconos" src="images/redes sociales/instagram.svg"
-                            alt="PatagoniaRent-Instagram">
-                    </a>
+                <div class="d-flex justify-content-center">
+                    <div class="col-sm-3">
+                        <a href="https://www.instagram.com/patagoniarent/">
+                            <img class="img-fluid iconos" src="images/redes sociales/instagram.svg"
+                                alt="PatagoniaRent-Instagram">
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="mailto:lagogutierrezturismo@gmail.com">
+                            <img class="img-fluid iconos" src="images/redes sociales/gmail.svg" alt="Mail">
+                        </a>
 
-                    <a href="https://wa.me/2944628358" class="btn-wsp" target="_blank">
-                        <img class="img-fluid iconos" src="images/redes sociales/whatsappgif.gif" alt="whatsapp"></img>
-                    </a>
-
-                    <a href="mailto:lagogutierrezturismo@gmail.com">
-                        <img class="img-fluid iconos" src="images/redes sociales/gmail.svg" alt="Mail">
-                    </a>
-
+                    </div>
                 </div>
             </div>
+            <div class="container col-sm-5 text-center">
+                <h3>La patagonia te espera</h3>
+                <br>
+                <p> San Carlos de Bariloche, Río Negro</p>
+                </div>
+            </div>
+        <div class="text-center">
+<h3>Copyright 2021 Patagonia Rent © todos los derechos reservados |</h3>
         </div>
+        
     </footer>
+    <script src="https://kit.fontawesome.com/a0f72ea1e7.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
