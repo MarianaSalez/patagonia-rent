@@ -62,7 +62,7 @@ function crearGaleria(cantImg){
 
 //GALERIAS DEL IMAGENES
 const acuarioCarousel = crearGaleria(11)
-const images = [imagenes.acuario.acuarioCarousel, imagenes.acuario.acuarioCarousel, imagenes.alma.almaCarousel, imagenes.bosque.bosqueCarousel, acuarioCarousel];
+const images = [imagenes.acuario.acuarioCarousel, imagenes.acuario.acuarioCarousel, imagenes.alma.almaCarousel, imagenes.bosque.bosqueCarousel, imagenes.refugio.refugioCarousel];
 
 addCarousel(ArrowsLeft,ArrowsRight, galeryImg, galeryImg.length)
 carouselMove(carousel)

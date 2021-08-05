@@ -40,5 +40,13 @@ export const imagenes = {
             'https://i.postimg.cc/G2zK55kB/img7.jpg '
         ],
         bosqueGalery:[]
+    },
+    refugio:{
+        refugioCarousel:[
+            'https://i.postimg.cc/nhjdLxmp/img1.jpg',
+            'https://i.postimg.cc/htk2zY8x/img2.jpg',
+            'https://i.postimg.cc/YSQb1x8P/img3.jpg'
+        ],
+        refugioGalery:[]
     }
 }
