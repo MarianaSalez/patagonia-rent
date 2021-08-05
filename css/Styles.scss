@@ -14,11 +14,11 @@ $textosFont: "trade-gothic-next";
 $textosWeight: 400;
 
 //COLORES
-$base:#efeae6;
-$brown:#a39482;
-$verdeHoja:#7b8760;
+$base: #efeae6;
+$brown: #a39482;
+$verdeHoja: #7b8760;
 $red: #873b42;
-$yellow:#e0a648;
+$yellow: #e0a648;
 
 //ESTILOS GENERALES
 * {
@@ -64,11 +64,19 @@ h3 {
   min-width: 10;
 }
 
+.styled-parraf {
+  font-family: $textosFont;
+  font-weight: $textosWeight;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: justify;
+}
+
 //MAIN SECCION (CABANAS)
 //MOBILE DESIGN
 
-body{
-  background-color: $base;  
+body {
+  background-color: $base;
 }
 
 .main {
@@ -81,9 +89,32 @@ body{
     margin-bottom: 0.5em;
     &-info {
       order: 2;
-      height:50%;
+      height: 50%;
       width: 80%;
       margin: auto;
+      .info-menu {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        &__link {
+          width: 88px;
+        }
+        &__link:hover{
+          text-decoration:none;
+          transform: scale(1.1);
+          transition: all .5s;
+        }
+        &__img {
+          width:100%;
+          display: block;
+          margin: auto;
+        }
+        &__title {
+          @extend .styled-parraf;
+          text-align: center;
+          color:$verdeHoja;
+        }
+      }
     }
     &__title {
       font-size: 18px;
@@ -92,34 +123,30 @@ body{
       font-family: $titlesFont;
       text-align: start;
       text-transform: uppercase;
-      color:$verdeHoja;
+      color: $verdeHoja;
     }
     &__text {
-      font-family: $textosFont;
-      font-weight: $textosWeight;
-      font-size: 12px;
-      line-height: 20px;
+      @extend .styled-parraf;
       color: $brown;
-      text-align: justify;
     }
     &-galeria {
       width: 100%;
       order: 1;
-      height:50%;
+      height: 50%;
       .tarjeta__img {
         height: 2.5em;
         width: 100%;
         border-radius: 0.5;
       }
       .fa-angle-left {
-        width:25px;
-        height:25px;
-        position:absolute;
-        margin: 115px 0rem 0rem .5em;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        margin: 115px 0rem 0rem 0.5em;
         font-size: 25px;
         text-align: center;
         background-color: rgb(0, 0, 0, 0.5);
-        border-radius:100px;
+        border-radius: 100px;
         color: white;
         cursor: pointer;
       }
@@ -135,11 +162,8 @@ body{
   }
   .quienesSomos {
     margin-top: 50px;
-    .tarjeta{
-      // &-galeria{
-      //   display:none;
-      // }
-      &__title{
+    .tarjeta {
+      &__title {
         margin: 33px 0px;
       }
     }
@@ -150,21 +174,28 @@ body{
   .main {
     .tarjeta {
       &-galeria {
-        width:80%;
-        margin:auto;
+        width: 80%;
+        margin: auto;
         height: 3.5em;
         .tarjeta__img {
           height: 3.5em;
         }
         .fa-angle-left {
-         margin-top: 165px;
+          margin-top: 165px;
         }
       }
-      &__title{
-        font-size:24px;
+      &__title {
+        font-size: 24px;
       }
-      &__text{
+      &__text {
         font-size: 18px;
+      }
+      &-info{
+        .info-menu {
+          &__title {
+           font-size: 18px;
+          }
+        }
       }
     }
   }
@@ -235,7 +266,7 @@ body{
 
     .tarjeta-left {
       .tarjeta-info {
-        padding: 0px 1em 0px 3em;
+        padding: 0px 1em 0px 1em;
       }
     }
   }
