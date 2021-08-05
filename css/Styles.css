@@ -112,9 +112,8 @@ h3 {
 }
 
 /*codigo para colores*/
-.colorBase {
-  background: linear-gradient(to top, #33632d, #a5e499);
-  background-size: cover;
+.colorBase { background-color: #efeae6;
+  
 }
 
 .colorGris{ 
