@@ -29,4 +29,16 @@ export const imagenes = {
         ],
         almaGaleria:[]
     },
+    bosque:{
+        bosqueCarousel:[
+            'https://i.postimg.cc/wBX0hvMQ/img1.jpg',
+            'https://i.postimg.cc/y6vpQkPf/img2.jpg',
+            'https://i.postimg.cc/sDL6zqb7/img3.jpg',
+            'https://i.postimg.cc/TY17ZfNT/img4.jpg',
+            'https://i.postimg.cc/ZqtwB3bq/img5.jpg',
+            'https://i.postimg.cc/0yJtyZq3/img6.jpg',
+            'https://i.postimg.cc/G2zK55kB/img7.jpg '
+        ],
+        bosqueGalery:[]
+    }
 }
