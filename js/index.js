@@ -1,8 +1,9 @@
-const images = ['http://www.fonditos3d.com/1024x768/espacio-misterioso.jpg', 'https://fondosmil.com/fondo/88265.jpg', 'https://fondosmil.com/fondo/88233.jpg'];
 let ArrowsLeft = document.querySelectorAll('.fa-angle-left')
 let ArrowsRight = document.querySelectorAll('.fa-angle-right')
 let galeryImg = document.querySelectorAll('.tarjeta__img')
 let carousel = []
+
+import {imagenes} from './imagenes.js'
 
 function addClassName(array, className) {
     let cont = 0
@@ -28,27 +29,40 @@ function addCarousel(btnsLeft, btnsRight, Images, length) {
 function carouselMove(array) {
     for (let i = 0; i < carousel.length; i++) {
         const reference = array[i]
+        reference.image.setAttribute('src', images[i][reference.url])
         reference.btnLeft.addEventListener('click', ()=>{
             if(reference.url > 0){
                 reference.url--
             }
             else{
-                reference.url = images.length -1
+                reference.url = images[i].length -1
             }
-            reference.image.setAttribute('src', images[reference.url])
+            reference.image.setAttribute('src', images[i][reference.url])
         })
 
         reference.btnRight.addEventListener('click', ()=>{
-            if(reference.url < images.length -1){
+            if(reference.url < images[i].length -1){
                 reference.url++
             }
             else{
                 reference.url = 0
             }
-            reference.image.setAttribute('src', images[reference.url])
+            reference.image.setAttribute('src', images[i][reference.url])
         })
     }
 }
+
+function crearGaleria(cantImg){
+    let images = []
+    for(let i = 0; i < cantImg; i++){
+        images.push(`../images/acuarioCarousel/img${i}.jpg`)
+    }
+    return images
+}
+
+//GALERIAS DEL IMAGENES
+const acuarioCarousel = crearGaleria(11)
+const images = [imagenes.acuario.acuarioCarousel, acuarioCarousel, acuarioCarousel, acuarioCarousel, acuarioCarousel];
 
 addCarousel(ArrowsLeft,ArrowsRight, galeryImg, galeryImg.length)
 carouselMove(carousel)

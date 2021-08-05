@@ -5,74 +5,6 @@
   padding: 0px;
 }
 
-/*Icono whatsapp*/
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
-.float:hover {
-	text-decoration: none;
-	color: #25d366;
-  background-color:#fff;
-}
-
-.my-float{
-	margin-top:16px;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 2;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-
-
-/*Fin estilo wapp*/
-
-
 header {
   align-items: center;
 }
@@ -101,14 +33,14 @@ h3 {
 
 /*codigo para colores*/
 .colorBase {
-  background: #7b8760;
+  background: linear-gradient(to top, #33632d, #a5e499);
   background-size: cover;
 }
 
 /*Estilos iconos footer*/
 .iconos {
-  width: calc(3vw);
-  min-width: 5;
+  width: calc(5vw);
+  min-width: 10;
 }
 
 body {
