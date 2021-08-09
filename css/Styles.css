@@ -87,6 +87,8 @@ header .main-image {
   margin-top: 100px;
 }
 
+button{border: none;}
+
 h3 {
   text-align: center;
   margin-top: 10px;
