@@ -21,7 +21,7 @@ document.getElementById("btn3").onclick = function(){
     cambiar("presentacion1","Mi nombre es Alejandro Aleuy y soy Guía de Montaña habilitado en el Parque Nacional Nahuel Huapi desde hace 15 años. He desarrollado mi pasión y profesión a lo largo de los Andes, de Argentina, Chile, Bolivia y Perú.")
     cambiar("presentacion2",`<p>Como ferviente admirador del lugar donde vivimos y su entorno es que buscamos acercar a quienes nos visiten al contacto con la naturaleza. Pueden consultarme por cualquier caminata o excursión, ya sea por el día o de algunas horas o incluso varios días en la montaña.</p>
 	<p>Así mismo por nuestra amplia trayectoria en la montaña podemos recomendarles o asesorarlos si desean realizar cualquier otra actividad relacionada (Escalada, Rafting, Cabalgatas, Parapente, Mountain Bike, Kayak y actividades náuticas, etc). </p>`)
-    cambiar("imagenPresentacion",`<img src="images/web/Trekking bariloche 2.jpg" alt="Foto Trekking" class="tarjeta__img slider1">`)}
+    cambiar("imagenPresentacion",`<img src="images/web/quienes somos/Trekking bariloche 2.jpg" alt="Foto Trekking" class="tarjeta__img slider1">`)}
 
 document.getElementById("btn4").onclick = function(){
     cambiar("titulo1", "Servicios")
@@ -34,6 +34,6 @@ document.getElementById("btn4").onclick = function(){
     <li>Todos nuestros espacios cuentan con Smart TV; WIFI; ropa blanca y cocina totalmente equipada.</li>
     </ul>`)
     cambiar("presentacion2","")
-    cambiar("imagenPresentacion",`<img src="images/web/servicios.JPG" alt="Foto servicios" class="tarjeta__img slider1">`)
+    cambiar("imagenPresentacion",`<img src="images/web/quienes somos/servicios.JPG" alt="Foto servicios" class="tarjeta__img slider1">`)
 }
 
