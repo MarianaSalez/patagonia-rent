@@ -27,20 +27,22 @@ h3 {
 }
 
 .logo {
-  width: calc(11vw);
-  min-width: 100;
+  width: calc(15vw);
+  max-height: 100px;
+  min-width: 100px;
 }
 
-/*codigo para colores*/
-.colorBase {
-  background: linear-gradient(to top, #33632d, #a5e499);
-  background-size: cover;
+.centrar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 /*Estilos iconos footer*/
 .iconos {
   width: calc(5vw);
-  min-width: 10;
+  min-width: 35x;
 }
 
 .styled-parraf, .main .tarjeta__text, .main .opiniones-comments .comment-text, .main .tarjeta-info .info-menu__title {
@@ -323,6 +325,18 @@ body {
 
 .my-float {
   margin-top: 16px;
+}
+
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: center;
+  align-items: center;
+  float:left;
+  background: #efeae6;
+
 }
 
 /*# sourceMappingURL=Styles.css.map */
