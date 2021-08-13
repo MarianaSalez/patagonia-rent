@@ -42,7 +42,7 @@ h3 {
 /*Estilos iconos footer*/
 .iconos {
   width: calc(5vw);
-  min-width: 30px;
+  min-width: 35x;
 }
 
 .styled-parraf, .main .tarjeta__text, .main .opiniones-comments .comment-text, .main .tarjeta-info .info-menu__title {
