@@ -82,6 +82,7 @@ body {
 .main {
   width: 100%;
   margin: 0px auto;
+  overflow: hidden;
   .tarjeta {
     font-size: 100px;
     display: flex;
@@ -97,22 +98,23 @@ body {
         justify-content: space-between;
         margin-top: 30px;
         &__link {
-          width: 88px;
+          width: 150px;
+          padding: 0px;
         }
-        &__link:hover{
-          text-decoration:none;
+        &__link:hover {
+          text-decoration: none;
           transform: scale(1.1);
-          transition: all .5s;
+          transition: all 0.5s;
         }
         &__img {
-          width:100%;
+          width: 88px;
           display: block;
           margin: auto;
         }
         &__title {
           @extend .styled-parraf;
           text-align: center;
-          color:$verdeHoja;
+          color: $verdeHoja;
         }
       }
     }
@@ -167,6 +169,81 @@ body {
         margin: 33px 0px;
       }
     }
+    &__img {
+      @extend .tarjeta__img;
+    }
+  }
+  .carousel {
+    &__arrows {
+      position: absolute;
+      width: 110%;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__arrow {
+      width: 31px;
+      height: 31px;
+      z-index: 100;
+      margin-top: calc(8.5em - 22px);
+      border-radius: 100px;
+      outline: none;
+      border: none;
+      background: $verdeHoja;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .carousel__icon {
+      width: 15px;
+      color: white;
+    }
+    &__arrow--right {
+    }
+    &__arrow--left {
+      margin-left: -10%;
+    }
+  }
+  .opiniones {
+    font-size: 16px;
+    width: 80%;
+    margin: 0px auto;
+    &-comments {
+      font-size: 16px;
+      display: flex;
+      .comment {
+        border: 1px solid $verdeHoja;
+        border-radius: 5px;
+        margin-right: 0.9375em;
+        &-header {
+          padding: 0.9375em;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid $verdeHoja;
+          .header__img {
+            width: 1.5em;
+            height: 1.5em;
+            margin-right: 1em;
+            border-radius: 100%;
+          }
+          .header-info {
+            &__name {
+              margin-bottom: 0.5625em;
+              font-size: 0.75em;
+              font-weight: bold;
+            }
+            &__date {
+              font-size: 0.75em;
+              margin: 0px !important;
+            }
+          }
+        }
+        &-text {
+          @extend .tarjeta__text;
+          font-size: 12px !important;
+          margin: 3.6875em 1.875em;
+        }
+      }
+    }
   }
 }
 
@@ -190,12 +267,20 @@ body {
       &__text {
         font-size: 18px;
       }
-      &-info{
+      &-info {
         .info-menu {
           &__title {
-           font-size: 18px;
+            font-size: 18px;
           }
         }
+      }
+    }
+    .carousel {
+      &__arrows {
+        width: 105%;
+      }
+      &__arrow--left {
+        margin-left: -5%;
       }
     }
   }
@@ -270,4 +355,19 @@ body {
       }
     }
   }
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  outline: none !important;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.ubicacion {
+  width: 100%;
+  height: 250px;
 }

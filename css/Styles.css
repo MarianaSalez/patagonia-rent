@@ -5,74 +5,6 @@
   padding: 0px;
 }
 
-/*Icono whatsapp*/
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
-.float:hover {
-	text-decoration: none;
-	color: #25d366;
-  background-color:#fff;
-}
-
-.my-float{
-	margin-top:16px;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 2;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-
-
-/*Fin estilo wapp*/
-
-
 header {
   align-items: center;
 }
@@ -87,8 +19,6 @@ header .main-image {
   margin-top: 100px;
 }
 
-button{border: none;}
-
 h3 {
   text-align: center;
   margin-top: 10px;
@@ -101,52 +31,19 @@ h3 {
   min-width: 100;
 }
 
-.logo {
-  width: calc(15vw);
-  max-height: 100px;
-  min-width: 100px;
-}
-
-.centrar{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /*codigo para colores*/
-.colorBase { background-color: #efeae6;
-  
-}
-
-.colorGris{ 
-  background:#d8c4ac;
+.colorBase {
+  background: linear-gradient(to top, #33632d, #a5e499);
   background-size: cover;
-}
-.colorMarron{
-  background:#a39482;
-  background-size: cover;
-  
-}
-
-.navbar-collapse {
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -ms-flex-align: center;
-  align-items: center;
-  float:left;
-  background: #efeae6;
- 
 }
 
 /*Estilos iconos footer*/
 .iconos {
   width: calc(5vw);
-  min-width: 30px;
+  min-width: 10;
 }
 
-.styled-parraf, .main .tarjeta__text, .main .tarjeta-info .info-menu__title {
+.styled-parraf, .main .tarjeta__text, .main .opiniones-comments .comment-text, .main .tarjeta-info .info-menu__title {
   font-family: "trade-gothic-next";
   font-weight: 400;
   font-size: 12px;
@@ -161,6 +58,7 @@ body {
 .main {
   width: 100%;
   margin: 0px auto;
+  overflow: hidden;
 }
 .main .tarjeta, .main .tarjeta-left {
   font-size: 100px;
@@ -180,7 +78,8 @@ body {
   margin-top: 30px;
 }
 .main .tarjeta-info .info-menu__link {
-  width: 88px;
+  width: 150px;
+  padding: 0px;
 }
 .main .tarjeta-info .info-menu__link:hover {
   text-decoration: none;
@@ -188,7 +87,7 @@ body {
   transition: all 0.5s;
 }
 .main .tarjeta-info .info-menu__img {
-  width: 100%;
+  width: 88px;
   display: block;
   margin: auto;
 }
@@ -205,7 +104,7 @@ body {
   text-transform: uppercase;
   color: #7b8760;
 }
-.main .tarjeta__text {
+.main .tarjeta__text, .main .opiniones-comments .comment-text {
   color: #a39482;
 }
 .main .tarjeta-galeria {
@@ -213,7 +112,7 @@ body {
   order: 1;
   height: 50%;
 }
-.main .tarjeta-galeria .tarjeta__img {
+.main .tarjeta-galeria .tarjeta__img, .main .tarjeta-galeria .quienesSomos__img {
   height: 2.5em;
   width: 100%;
   border-radius: 0.5;
@@ -239,6 +138,71 @@ body {
 .main .quienesSomos .tarjeta__title {
   margin: 33px 0px;
 }
+.main .carousel__arrows {
+  position: absolute;
+  width: 110%;
+  display: flex;
+  justify-content: space-between;
+}
+.main .carousel__arrow {
+  width: 31px;
+  height: 31px;
+  z-index: 100;
+  margin-top: calc(8.5em - 22px);
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  background: #7b8760;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .carousel .carousel__icon {
+  width: 15px;
+  color: white;
+}
+.main .carousel__arrow--left {
+  margin-left: -10%;
+}
+.main .opiniones {
+  font-size: 16px;
+  width: 80%;
+  margin: 0px auto;
+}
+.main .opiniones-comments {
+  font-size: 16px;
+  display: flex;
+}
+.main .opiniones-comments .comment {
+  border: 1px solid #7b8760;
+  border-radius: 5px;
+  margin-right: 0.9375em;
+}
+.main .opiniones-comments .comment-header {
+  padding: 0.9375em;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #7b8760;
+}
+.main .opiniones-comments .comment-header .header__img {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 1em;
+  border-radius: 100%;
+}
+.main .opiniones-comments .comment-header .header-info__name {
+  margin-bottom: 0.5625em;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+.main .opiniones-comments .comment-header .header-info__date {
+  font-size: 0.75em;
+  margin: 0px !important;
+}
+.main .opiniones-comments .comment-text {
+  font-size: 12px !important;
+  margin: 3.6875em 1.875em;
+}
 
 @media (min-width: 600px) {
   .main .tarjeta-galeria {
@@ -246,7 +210,7 @@ body {
     margin: auto;
     height: 3.5em;
   }
-  .main .tarjeta-galeria .tarjeta__img {
+  .main .tarjeta-galeria .tarjeta__img, .main .tarjeta-galeria .quienesSomos__img {
     height: 3.5em;
   }
   .main .tarjeta-galeria .fa-angle-left, .main .tarjeta-galeria .fa-angle-right {
@@ -255,11 +219,17 @@ body {
   .main .tarjeta__title {
     font-size: 24px;
   }
-  .main .tarjeta__text {
+  .main .tarjeta__text, .main .opiniones-comments .comment-text {
     font-size: 18px;
   }
   .main .tarjeta-info .info-menu__title {
     font-size: 18px;
+  }
+  .main .carousel__arrows {
+    width: 105%;
+  }
+  .main .carousel__arrow--left {
+    margin-left: -5%;
   }
 }
 @media (min-width: 1024px) {
@@ -294,7 +264,7 @@ body {
   .main .tarjeta-info {
     padding: 0px 0.8em 0px 0.5em;
   }
-  .main .tarjeta__text {
+  .main .tarjeta__text, .main .opiniones-comments .comment-text {
     text-align: start;
   }
   .main .tarjeta-left .tarjeta-info {
@@ -315,38 +285,19 @@ body {
     padding: 0px 1em 0px 1em;
   }
 }
+.btn {
+  border: none;
+  background-color: transparent;
+  outline: none !important;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.ubicacion {
+  width: 100%;
+  height: 250px;
+}
 
 /*# sourceMappingURL=Styles.css.map */
-
-/* Estilos fuentes */
-.title{
-  font-family:"atrament-web";
-  src:url("https://use.typekit.net/af/ff79ef/0000000000000000773598b3/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/ff79ef/0000000000000000773598b3/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/ff79ef/0000000000000000773598b3/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
-  font-display:auto;font-style:normal;font-weight:100;
-  color: #7b8760;
-  font-size: 2em;
-  }
-
-  .text{ 
-    font-family:"trade-gothic-next";
-  src:url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-  font-display:auto;font-style:normal;font-weight:400;
-  color: #7b8760;
-  }
-
-  
-.titleNav{ 
-  font-family:"trade-gothic-next";
-src:url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-font-display:auto;font-style:normal;font-weight:400;
-color: #7b8760 !important; font-size: 1.1em;
-}
-
-.subtitle{ 
-  font-family:"trade-gothic-next";
-src:url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-font-display:auto;font-style:normal;font-weight:400;
-color: #7b8760 !important; font-size: 1.0em;
-}
-
-
