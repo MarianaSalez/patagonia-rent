@@ -30,6 +30,7 @@ h3 {
   width: calc(15vw);
   max-height: 100px;
   min-width: 100px;
+  max-width: 156px;
 }
 
 .centrar{
