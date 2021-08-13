@@ -27,20 +27,25 @@ h3 {
 }
 
 .logo {
-  width: calc(11vw);
-  min-width: 100;
+  width: calc(15vw);
+  max-height: 100px;
+  min-width: 100px;
 }
 
-/*codigo para colores*/
-.colorBase {
-  background: linear-gradient(to top, #33632d, #a5e499);
-  background-size: cover;
+.centrar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
+
 
 /*Estilos iconos footer*/
 .iconos {
   width: calc(5vw);
   min-width: 10;
+  min-width: 30px;
 }
 
 .styled-parraf, .main .tarjeta__text, .main .opiniones-comments .comment-text, .main .tarjeta-info .info-menu__title {

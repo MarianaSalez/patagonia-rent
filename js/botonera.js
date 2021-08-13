@@ -14,7 +14,7 @@ document.getElementById("btn2").onclick = function(){
     cambiar("titulo1", "Ubicacion")
     cambiar("presentacion1","El complejo se encuentra ubicado en Villa Lago Gutiérrez, un barrio residencial situado en el medio del bosque y la montaña. A sólo 11 km del centro de Bariloche por Ruta 40 Sur camino a El Bolsón, y a los pies del Cerro Ventana. A pocas cuadras se puede disfrutar de las playas del Lago Gutiérrez");
     cambiar("presentacion2","")
-    cambiar("imagenPresentacion",`<iframe class="ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67930.43076192202!2d-71.40181835197643!3d-41.197155308473626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a6fdc23f53213%3A0x30174fbec7725467!2sLago%20Guti%C3%A9rrez!5e0!3m2!1ses!2sar!4v1628544609646!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`)
+    cambiar("imagenPresentacion",`<iframe class="ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.806495281246!2d-71.38282728458057!3d-41.182387579283436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDEwJzU2LjYiUyA3McKwMjInNTAuMyJX!5e0!3m2!1ses!2sar!4v1628884865115!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`)
 }
 
 document.getElementById("btn3").onclick = function(){
