@@ -39,12 +39,9 @@ h3 {
 }
 
 
-
-
 /*Estilos iconos footer*/
 .iconos {
   width: calc(5vw);
-  min-width: 10;
   min-width: 30px;
 }
 
@@ -328,6 +325,18 @@ body {
 
 .my-float {
   margin-top: 16px;
+}
+
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: center;
+  align-items: center;
+  float:left;
+  background: #efeae6;
+
 }
 
 /*# sourceMappingURL=Styles.css.map */
