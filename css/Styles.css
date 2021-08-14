@@ -205,19 +205,6 @@ body {
   font-size: 12px !important;
   margin: 3.6875em 1.875em;
 }
-.main .opiniones-comments .comment:hover {
-  transform: scale(1.1);
-  transform-origin: center left;
-}
-.main .opiniones-comments .comment:hover ~ .comment {
-  transform: translate3d(50px, 0, 0);
-}
-.main .opiniones-comments:hover .comment {
-  opacity: 0.3;
-}
-.main .opiniones-comments:hover .comment:hover {
-  opacity: 1;
-}
 
 @media (min-width: 600px) {
   .main .tarjeta-galeria {
@@ -245,6 +232,19 @@ body {
   }
   .main .carousel__arrow--left {
     margin-left: -5%;
+  }
+  .main .opiniones-comments .comment:hover {
+    transform: scale(1.1);
+    transform-origin: center left;
+  }
+  .main .opiniones-comments .comment:hover ~ .comment {
+    transform: translate3d(50px, 0, 0);
+  }
+  .main .opiniones-comments-comments:hover .comment {
+    opacity: 0.3;
+  }
+  .main .opiniones-comments-comments:hover .comment:hover {
+    opacity: 1;
   }
 }
 @media (min-width: 1024px) {

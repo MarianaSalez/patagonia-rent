@@ -245,19 +245,6 @@ body {
           margin: 3.6875em 1.875em;
         }
       }
-      .comment:hover{
-        transform: scale(1.1);
-        transform-origin: center left;
-      }
-      .comment:hover ~ .comment{
-        transform: translate3d(50px, 0,0);
-      }
-    }
-    &-comments:hover .comment{
-      opacity:0.3;
-    }
-    &-comments:hover .comment:hover{
-      opacity:1;
     }
   }
 }
@@ -296,6 +283,21 @@ body {
       }
       &__arrow--left {
         margin-left: -5%;
+      }
+    }
+    .opiniones-comments{
+      .comment:hover{
+        transform: scale(1.1) ;
+        transform-origin: center left;
+      }
+      .comment:hover ~ .comment{
+        transform: translate3d(50px, 0,0);
+      }
+      &-comments:hover .comment{
+        opacity:0.3;
+      }
+      &-comments:hover .comment:hover{
+        opacity:1;
       }
     }
   }
