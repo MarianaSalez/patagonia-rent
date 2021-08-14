@@ -208,9 +208,11 @@ body {
     width: 80%;
     margin: 0px auto;
     &-comments {
+      padding: 20px 0px;
       font-size: 16px;
       display: flex;
       .comment {
+        transition: all .5s;
         border: 1px solid $verdeHoja;
         border-radius: 5px;
         margin-right: 0.9375em;
@@ -243,6 +245,19 @@ body {
           margin: 3.6875em 1.875em;
         }
       }
+      .comment:hover{
+        transform: scale(1.1);
+        transform-origin: center left;
+      }
+      .comment:hover ~ .comment{
+        transform: translate3d(50px, 0,0);
+      }
+    }
+    &-comments:hover .comment{
+      opacity:0.3;
+    }
+    &-comments:hover .comment:hover{
+      opacity:1;
     }
   }
 }
