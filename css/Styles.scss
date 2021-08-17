@@ -51,7 +51,7 @@ h3 {
   width: calc(15vw);
   max-height: 100px;
   min-width: 100px;
-  max-width: 156px;
+  max-width: 150px;
 }
 
 .titleNav{ 
@@ -68,6 +68,17 @@ font-display:auto;font-style:normal;font-weight:400;
 color: #7b8760 !important; font-size: 1.0em;
 }
 
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: center;
+  align-items: center;
+  float:left;
+  background: #efeae6;
+ 
+}
 /*codigo para colores*/
 .colorBase {
   background: linear-gradient(to top, #33632d, #a5e499);
