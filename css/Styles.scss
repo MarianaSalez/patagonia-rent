@@ -48,8 +48,24 @@ h3 {
 }
 
 .logo {
-  width: calc(11vw);
-  min-width: 100;
+  width: calc(15vw);
+  max-height: 100px;
+  min-width: 100px;
+  max-width: 156px;
+}
+
+.titleNav{ 
+  font-family:"trade-gothic-next";
+src:url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+color: #7b8760 !important; font-size: 1.1em;
+}
+
+.subtitle{ 
+  font-family:"trade-gothic-next";
+src:url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/a741c0/00000000000000007735ba66/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+color: #7b8760 !important; font-size: 1.0em;
 }
 
 /*codigo para colores*/
@@ -61,7 +77,7 @@ h3 {
 /*Estilos iconos footer*/
 .iconos {
   width: calc(5vw);
-  min-width: 10;
+  min-width: 35px;
 }
 
 .styled-parraf {
@@ -70,6 +86,12 @@ h3 {
   font-size: 12px;
   line-height: 20px;
   text-align: justify;
+}
+
+.centrar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 //MAIN SECCION (CABANAS)
