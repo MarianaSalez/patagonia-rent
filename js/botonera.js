@@ -7,7 +7,7 @@ document.getElementById("btn1").onclick = function(){
     cambiar("presentacion1",`Somos una familia radicada hace muchos años en Bariloche, amantes de la montaña y la naturaleza. Con los años emprendimos este proyecto con la intención de acercar al visitante a un turismo sustentable, buscando la conexión del mismo con el  bosque y la montaña que nos rodea.
     Intentamos ofrecer y difundir alternativas no tan masificadas, concientizando a la vez en la importancia de las prácticas de bajo impacto.`)
     cambiar("presentacion2","Buscamos acercar a nuestros visitantes a un turismo mas sustentable, ofreciendo alternativas no tan masificadas y concientizando en la importancia de las practicas de bajo impacto.")
-    cambiar("imagenPresentacion",'  <img src="https://i.postimg.cc/W4Z5zxNJ/img1.jpg" alt="Foto Familia" class="tarjeta__img slider1">')
+    cambiar("imagenPresentacion",'  <img src="images/web/quienes somos/quienes somos.JPG" alt="Foto Familia" class="tarjeta__img slider1">')
 }
 
 document.getElementById("btn2").onclick = function(){
@@ -22,7 +22,7 @@ document.getElementById("btn3").onclick = function(){
     cambiar("presentacion1","Mi nombre es Alejandro Aleuy y soy Guía de Montaña habilitado en el Parque Nacional Nahuel Huapi desde hace 15 años. He desarrollado mi pasión y profesión a lo largo de los Andes, de Argentina, Chile, Bolivia y Perú.")
     cambiar("presentacion2",`<p>Como ferviente admirador del lugar donde vivimos y su entorno es que buscamos acercar a quienes nos visiten al contacto con la naturaleza. Pueden consultarme por cualquier caminata o excursión, ya sea por el día o de algunas horas o incluso varios días en la montaña.</p>
 	<p>Así mismo por nuestra amplia trayectoria en la montaña podemos recomendarles o asesorarlos si desean realizar cualquier otra actividad relacionada (Escalada, Rafting, Cabalgatas, Parapente, Mountain Bike, Kayak y actividades náuticas, etc). </p>`)
-    cambiar("imagenPresentacion",`<img src="images/web/quienes somos/Trekking bariloche 2.jpg" alt="Foto Trekking" class="tarjeta__img slider1">`)}
+    cambiar("imagenPresentacion",`<img src="images/web/quienes somos/trek.JPG" alt="Foto Trekking" class="tarjeta__img slider1">`)}
 
 document.getElementById("btn4").onclick = function(){
     cambiar("titulo1", "Servicios")
