@@ -27,6 +27,7 @@ $yellow: #e0a648;
 }
 
 header {
+  position: relative;
   align-items: center;
   .navbar {
     height: 100px !important;
@@ -38,6 +39,15 @@ header {
     border-radius: 0px;
     margin-top: 100px;
   }
+  #Logo{
+    position:absolute;
+    background-color: white;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%);
+    padding: 0px;
+  }
+  
 }
 
 h3 {
@@ -230,8 +240,6 @@ body {
       width: 15px;
       color: white;
     }
-    &__arrow--right {
-    }
     &__arrow--left {
       margin-left: -10%;
     }
@@ -293,7 +301,7 @@ body {
           height: 3.5em;
         }
         .fa-angle-left {
-          margin-top: 165px;
+          margin-top: 218px;
         }
       }
       &__title {
@@ -364,6 +372,17 @@ body {
       }
     }
   }
+  .header{
+    position:static;
+    #Logo{
+      position:static;
+      background-color: transparent;
+      top: none;
+      left:none;
+      transform: translate(0%);
+    }
+  }
+  
 }
 
 @media (min-width: 1200px) {
@@ -446,6 +465,7 @@ body {
 .my-float{
 	margin-top:16px;
 }
+
 
 .img-thumbnail{
   padding: 0px;
