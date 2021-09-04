@@ -381,7 +381,7 @@ body {
   bottom: 40px;
   right: 40px;
   background-color: #25d366;
-  color: #FFF;
+  color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
@@ -397,6 +397,19 @@ body {
 
 .my-float {
   margin-top: 16px;
+}
+
+#whatsapp2 {
+  bottom: 130px;
+  z-index: 0;
+}
+
+#myWhatsapp2 {
+  width: 60px;
+  height: 60px;
+  bottom: 130px;
+  position: fixed;
+  z-index: 100;
 }
 
 .img-thumbnail {
