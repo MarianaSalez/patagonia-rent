@@ -7,7 +7,7 @@ document.getElementById("btn1").onclick = function(){
     cambiar("presentacion1",`Somos una familia radicada hace muchos años en Bariloche, amantes de la montaña y la naturaleza. Con los años emprendimos este proyecto con la intención de acercar al visitante a un turismo sustentable, buscando la conexión del mismo con el  bosque y la montaña que nos rodea.
     Intentamos ofrecer y difundir alternativas no tan masificadas, concientizando a la vez en la importancia de las prácticas de bajo impacto.`)
     cambiar("presentacion2","Buscamos acercar a nuestros visitantes a un turismo mas sustentable, ofreciendo alternativas no tan masificadas y concientizando en la importancia de las practicas de bajo impacto.")
-    cambiar("imagenPresentacion",'  <img src="https://i.postimg.cc/brJK6Lqy/quienes-somos.jpg" alt="Foto Familia" class="tarjeta__img slider1">')
+    cambiar("imagenPresentacion",'  <img src="https://i.postimg.cc/k4JRYpK4/quienes-somos.jpg" alt="Foto Familia" class="tarjeta__img slider1">')
 }
 
 document.getElementById("btn2").onclick = function(){
